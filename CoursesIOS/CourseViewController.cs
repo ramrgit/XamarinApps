@@ -21,6 +21,16 @@ namespace CoursesIOS
 			base.DidReceiveMemoryWarning ();
 			// Release any cached data, images, etc that aren't in use.
 		}
+
+		partial void buttonNext_TouchUpInside (UIButton sender)
+		{
+			labelTitle.Text = "Next Clicked";
+		}
+
+		partial void buttonPrev_TouchUpInside (UIButton sender)
+		{
+			labelTitle.Text = "Prev Clicked";
+		}
 	}
 }
 

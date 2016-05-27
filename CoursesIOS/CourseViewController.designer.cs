@@ -1,4 +1,4 @@
-﻿// WARNING
+// WARNING
 //
 // This file has been generated automatically by Xamarin Studio from the outlets and
 // actions declared in your storyboard file.
@@ -14,9 +14,24 @@ namespace CoursesIOS
 	[Register ("CourseViewController")]
 	partial class CourseViewController
 	{
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel labelTitle { get; set; }
+
+		[Action ("buttonNext_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void buttonNext_TouchUpInside (UIButton sender);
+
+		[Action ("buttonPrev_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void buttonPrev_TouchUpInside (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
+			if (labelTitle != null) {
+				labelTitle.Dispose ();
+				labelTitle = null;
+			}
 		}
 	}
 }
-
